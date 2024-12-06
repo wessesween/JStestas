@@ -62,3 +62,46 @@ console.log('Amzius dienomis;', skai[3]);
 console.log("----------5-----------");
 console.log();
 
+let tempcelsi = 35;
+let tempfar = 110;
+
+function farCelsi(farenheito){
+    return (farenheito - 32)*5/9;
+};
+
+function celFar(celsi){
+    return (celsi * 9/5)+32;
+};
+
+let tCel = farCelsi(tempfar);
+let tFar = celFar(tempcelsi);
+
+console.log(tempfar, '=', tCel.toFixed(2));
+console.log(tCel.toFixed(2), '=', tFar);
+
+console.log("----------6-----------");
+console.log();
+
+let skaiciai = '';
+
+for (let i=1; i<=10; i++){
+    skaiciai +=i;
+    if(i !== 10){
+        skaiciai +="-"
+    }
+};
+console.log(skaiciai);
+
+
+console.log("----------7-----------");
+console.log();
+
+let zvg  = "";
+
+for (let i = 1; i <= 10; i++){
+    zvg += "*"; 
+    console.log(zvg);
+};
+//console.log(zvg);
+console.log("----------8-----------");
+console.log();
