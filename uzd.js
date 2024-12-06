@@ -103,5 +103,27 @@ for (let i = 1; i <= 10; i++){
     console.log(zvg);
 };
 //console.log(zvg);
-console.log("----------8-----------");
+console.log("----------9-----------");
 console.log();
+
+let vaR = [ "Tomas" , "Dainius", "Paulius", "Jonas"];
+
+let kabl = '';
+for (let i = 0; i< vaR.length; i++){
+    if(i === vaR.length -1){
+        kabl += vaR[i] ; 
+    }else {
+        kabl += vaR[i] + ',';
+    }
+}
+console.log(kabl);
+
+let plus = '';
+for (let i = 0; i< vaR.length; i++){
+    if(i === vaR.length -1){
+        plus += vaR[i] ; 
+    }else {
+        plus += vaR[i] + '+';
+    }
+};
+console.log(plus);
